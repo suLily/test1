@@ -1,4 +1,9 @@
 Main()
 {
-    print "hello word"
+    print "hello word!!!"
+}
+
+metho()
+{
+    print "my name is Lily."
 }
