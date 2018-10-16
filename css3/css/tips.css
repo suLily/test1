@@ -1,0 +1,138 @@
+.hdmap-popup-warn {
+  position: absolute;
+  top: 220px;
+  left: 80px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #fc933e;
+}
+.hdmap-popup-warn::before,
+.hdmap-popup-warn::after {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.hdmap-popup-warn::before {
+  left: -62.5%;
+  top: -62.5%;
+  height: 225%;
+  width: 225%;
+  animation-name: upstep-first;
+  background: rgba(252, 147, 62, 0.5);
+  border: 1px solid rgba(254, 153, 72, 0.5);
+}
+.hdmap-popup-warn::after {
+  left: -150%;
+  top: -150%;
+  height: 400%;
+  width: 400%;
+  background: rgba(252, 147, 62, 0.2);
+  border: 1px solid rgba(254, 153, 72, 0.2);
+  animation-name: upstep-second;
+}
+@keyframes upstep-first {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes upstep-second {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.warning-tips {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background-color: #b20000;
+  border-radius: 50%;
+}
+.warning-tips::before,
+.warning-tips::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.warning-tips.tips::before {
+  width: 20px;
+  height: 20px;
+  background-color: #b20000;
+  z-index: 5;
+}
+.warning-tips.tips::after {
+  background-color: rgba(178, 0, 0, 0.4);
+  animation-name: tips;
+}
+.warning-tips.big-tips {
+  left: 200px;
+}
+.warning-tips.big-tips::before {
+  background-color: rgba(178, 0, 0, 0.6);
+  animation-name: tips;
+  z-index: 5;
+}
+.warning-tips.big-tips::after {
+  z-index: 3;
+  background-color: rgba(178, 0, 0, 0.3);
+  animation-name: big-tips;
+}
+@keyframes tips {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  50%,
+  100% {
+    width: 60px;
+    height: 60px;
+  }
+}
+@keyframes big-tips {
+  0%,
+  50% {
+    width: 60px;
+    height: 60px;
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+  }
+}

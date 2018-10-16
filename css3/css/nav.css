@@ -1,0 +1,46 @@
+.big-wrap {
+  padding: 50px;
+}
+.nav,
+.nav-test {
+  margin-left: 172px;
+  margin-right: 240px;
+  line-height: 38px;
+  font-size: 18px;
+}
+.nav li,
+.nav-test li {
+  float: left;
+  font-weight: 400;
+  /*border-bottom: 2px solid #e1b96e;*/
+  position: relative;
+}
+.nav li.active,
+.nav-test .active {
+  color: #e1b96e;
+}
+.nav .active:before,
+.nav li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid #e1b96e;
+  transition: all .5s;
+}
+.nav .active:before,
+.nav li:hover:before {
+  width: 100%;
+  left: 0;
+}
+.nav li:hover ~ li:before {
+  left: 0;
+}
+li a {
+  display: block;
+  padding: 0 16px;
+  color: #1b1b1b;
+}

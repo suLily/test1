@@ -1,0 +1,221 @@
+html,
+body,
+form,
+div,
+span,
+ul,
+ol,
+li,
+p,
+pre,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+a,
+fieldset,
+legend,
+address,
+label,
+textarea,
+select,
+input,
+figure,
+table,
+th,
+td,
+b,
+i,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  line-height: 1.5;
+  font-family: "Microsoft YaHei", Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+}
+body,
+input,
+select,
+button,
+textarea {
+  font-size: .6rem;
+  font-weight: 300;
+}
+fieldset,
+img {
+  border: 0;
+}
+ul {
+  list-style: none;
+}
+/*em,i{font-style:normal;}*/
+i,
+em {
+  font-style: normal;
+}
+img {
+  border: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus,
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-variant: normal;
+}
+b {
+  font-weight: normal;
+}
+input,
+select {
+  vertical-align: middle;
+}
+legend {
+  display: none;
+}
+textarea {
+  resize: none;
+}
+.clear {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn + .btn {
+  margin-left: 30px;
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.style1 {
+  margin-bottom: 20px;
+}
+.style1 .ripple {
+  position: relative;
+  overflow: hidden;
+}
+.style1 .ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #666 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .3s, opacity .5s;
+}
+.style1 .ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .3;
+  transition: 0s;
+}
+.style2 .ripple {
+  position: relative;
+}
+.style2 .ripple:focus {
+  outline: none;
+}
+.style2 .ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  pointer-events: none;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0;
+  transition: all .3s;
+}
+.style2 .ripple:active:after {
+  opacity: .3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0s;
+}

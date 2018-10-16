@@ -1,0 +1,54 @@
+body {
+  background-color: #2C3437;
+}
+.btn {
+  box-sizing: border-box;
+  position: relative;
+  margin: 50px;
+  width: 192px;
+  height: 192px;
+  text-align: center;
+  color: #fff;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 174px;
+  height: 174px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+}
+.btn1 {
+  font-size: 80px;
+  line-height: 192px;
+}
+.btn1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 154px;
+  height: 154px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.btn2 {
+  padding-top: 70px;
+  font-size: 30px;
+  line-height: 132px;
+}
+.btn2::before {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '☾';
+  font-size: 100px;
+  line-height: 100px;
+}

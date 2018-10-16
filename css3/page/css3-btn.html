@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Btn[:checked]</title>
+  <link rel="stylesheet" type="text/css" href="../css/_reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/css3-btn.css">
+</head>
+<body>
+<div class="wrap">
+
+  <h1>IOS 风格</h1>
+
+  <h2>Radio 单选</h2>
+  <div class="item">
+    <div class="btn-box">
+      <input type="radio" name="test1" class="switch" id="t1" checked>
+      <label class="switchery" for="t1">
+        <small></small>
+      </label>
+    </div>
+
+    <div class="btn-box">
+      <input type="radio" name="test1" class="switch" id="t2">
+      <label class="switchery" for="t2">
+        <small></small>
+      </label>
+    </div>
+  </div>
+
+  <h2>CheckBox 复选</h2>
+  <div class="item">
+    <div class="btn-box">
+      <input type="checkbox" name="test2" class="switch" id="t3" checked>
+      <label class="switchery" for="t3">
+        <small></small>
+      </label>
+    </div>
+
+    <div class="btn-box">
+      <input type="checkbox" name="test2" class="switch" id="t4">
+      <label class="switchery" for="t4">
+        <small></small>
+      </label>
+    </div>
+  </div>
+
+  <h2>CheckBox 复选 <small>【label 包裹 input】 优：可以不写 id —— 不用在 label 用 for 绑定；缺：获取点击 label 的事件时会产生2次事件。</small></h2>
+  <div class="item">
+    <label class="btn-box">
+      <input type="checkbox" name="test3" class="switch" checked>
+      <span class="switchery">
+          <small></small>
+        </span>
+    </label>
+
+    <label class="btn-box">
+      <input type="checkbox" name="test3" class="switch">
+      <span class="switchery">
+          <small></small>
+        </span>
+    </label>
+
+  </div>
+
+  <!----------------------------------------------------->
+  <h1>原生风格</h1>
+
+  <h2>单选框</h2>
+  <div class="item">
+    <label class="ico-btn-box">
+      <input type="radio" name="test4" value="1" class="ico-input">
+      <span class="ico-radio"></span>
+      单选1
+    </label>
+
+    <label class="ico-btn-box">
+      <input type="radio" name="test4" value="2" class="ico-input">
+      <span class="ico-radio"></span>
+      单选2
+    </label>
+  </div>
+
+  <h2>复选框</h2>
+  <div class="item">
+    <label class="ico-btn-box">
+      <input type="checkbox" name="test5" value="1" class="ico-input">
+      <span class="ico-checkbox"></span>
+      单选1
+    </label>
+
+    <label class="ico-btn-box">
+      <input type="checkbox" name="test5" value="2" class="ico-input">
+      <span class="ico-checkbox"></span>
+      单选2
+    </label>
+  </div>
+  <hr>
+  <div class="item">
+    <label class="ico-btn-box">
+      <input type="checkbox" name="test5" value="1" class="ico-input">
+      <span class="ico-checkbox-full"></span>
+      单选1
+    </label>
+
+    <label class="ico-btn-box">
+      <input type="checkbox" name="test5" value="2" class="ico-input">
+      <span class="ico-checkbox-full"></span>
+      单选2
+    </label>
+  </div>
+  <hr>
+  <div class="item">
+    <label class="ico-btn-box">
+      <input type="checkbox" name="test5" value="1" class="ico-input">
+      <span class="ico-checkbox-img"></span>
+      单选1
+    </label>
+
+    <label class="ico-btn-box">
+      <input type="checkbox" name="test5" value="2" class="ico-input">
+      <span class="ico-checkbox-img"></span>
+      单选2
+    </label>
+  </div>
+
+</div>
+</body>
+</html>
